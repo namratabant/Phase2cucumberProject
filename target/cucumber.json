@@ -1,0 +1,508 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the application https://www.saucedemo.com/",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6440218200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the swaglabs application in browser",
+            "match": {
+              "location": "Loginsteps.i_have_opened_the_swaglabs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T17:41:15.261Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4256050400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Positive Login using scenario outline",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-login-page-of-the-application-https://www.saucedemo.com/;positive-login-using-scenario-outline;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4277776500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 215301600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Loginsteps.i_enter_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170744100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Loginsteps.i_enter_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 325826700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the login button",
+            "match": {
+              "location": "Loginsteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1538900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be logged in succesful and land on product page",
+            "match": {
+              "location": "Loginsteps.i_should_be_logged_in_succesful_and_land_on_product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature_Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Open the application https://www.saucedemo.com/",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6429739700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the swaglabs application in browser",
+            "match": {
+              "location": "Loginsteps.i_have_opened_the_swaglabs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T17:41:31.142Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2204576000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Negative Login using scenario outline",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-login-page-of-the-application-https://www.saucedemo.com/;negative-login-using-scenario-outline;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 350851700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 184597800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Loginsteps.i_enter_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167889200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter password \"wrong_pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong_pass\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Loginsteps.i_enter_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115056500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on the login button",
+            "match": {
+              "location": "Loginsteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64075100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should be getting error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 34
+                }
+              ],
+              "location": "Loginsteps.i_should_be_getting_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature_Login"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to test the login page of the application https://www.saucedemo.com/",
+    "description": "",
+    "id": "this-feature-would-be-used-to-test-the-login-page-of-the-application-https://www.saucedemo.com/",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Feature_Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Logon to the application https://www.saucedemo.com/",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6471686100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the swaglabs application in browser",
+            "match": {
+              "location": "Loginsteps.i_have_opened_the_swaglabs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T17:41:40.668Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2275822900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Validate the prices of the product",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-products-price-of-the-application-https://www.saucedemo.com/;validate-the-prices-of-the-product;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 485453700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 684205100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have logged in successful",
+            "match": {
+              "location": "ValidateSteps.i_have_logged_in_successful()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174514500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate \"Sauce Labs Backpack\" and \"$29.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"$29.99\"",
+                  "offset": 35
+                }
+              ],
+              "location": "ValidateSteps.validate_and(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature_Products"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Logon to the application https://www.saucedemo.com/",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6491086200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the swaglabs application in browser",
+            "match": {
+              "location": "Loginsteps.i_have_opened_the_swaglabs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T17:41:50.775Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2386579700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.SetUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validate the prices of the product using data table",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-products-price-of-the-application-https://www.saucedemo.com/;validate-the-prices-of-the-product-using-data-table",
+        "after": [
+          {
+            "result": {
+              "duration": 438418500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 712255100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I have logged in successful",
+            "match": {
+              "location": "ValidateSteps.i_have_logged_in_successful()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 428198800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I pass below prodcuts",
+            "match": {
+              "location": "ValidateSteps.i_pass_below_prodcuts(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light"
+                ]
+              },
+              {
+                "cells": [
+                  "Test.allTheThings() T-Shirt (Red)"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1924100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should validate product prices against below prices",
+            "match": {
+              "location": "ValidateSteps.i_should_validate_product_prices_against_below_prices(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "$29.99"
+                ]
+              },
+              {
+                "cells": [
+                  "$9.99"
+                ]
+              },
+              {
+                "cells": [
+                  "$15.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Feature_Products"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to test the products price of the application https://www.saucedemo.com/",
+    "description": "",
+    "id": "this-feature-would-be-used-to-test-the-products-price-of-the-application-https://www.saucedemo.com/",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Products.feature",
+    "tags": [
+      {
+        "name": "@Feature_Products",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
